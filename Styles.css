@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.block {
+    width: 100vw;
+    height: 50vh;
+}
+
+.dark {
+    background-color: rgb(42, 42, 42);
+}
+
+.light {
+    background-color: rgb(202, 202, 202);
+}
+
+.container {
+    width: 90%;
+    height: 50%;
+    background-color: rgb(238, 224, 224);
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    border-radius: 10px;
+    box-shadow: 0px 7px 10px 2px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 650px) {
+    .container {
+        width: 60%;
+        left: 20vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        width: 50%;
+        left: 25vw;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 0.7fr 1px 2fr 1fr 0.7fr;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.imageContainer {
+    background-color: #4a78da;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.iconsContainer {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.displayContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+#displayP {
+    color: rgb(126, 126, 126);
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#displayData {
+    padding-top: 10px;
+    color: rgb(49, 49, 49);
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.icon {
+    color: rgb(182, 182, 182);
+    transition: all 0.3s linear;
+    font-size: 24px;
+}
+
+.icon-active {
+    color: rgb(97, 129, 219);
+}
+
+.icon:hover {
+    color: rgb(97, 129, 219);
+    cursor: pointer;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    color: white;
+    background-color: rgb(69, 69, 197);
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s linear;
+}
+
+#btn:hover {
+    color: rgb(69, 69, 197);
+    background-color: white;
+    cursor: pointer;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.imageFrame {
+    position: relative;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    top: 20%;
+    border: solid 4px rgb(255, 255, 255);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+#image {
+    object-fit: contain;
+    height: 120px;
+    width: 120px;
+}
